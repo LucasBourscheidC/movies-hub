@@ -1,0 +1,49 @@
+.header-bar{
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-bar-left{
+    display: flex;
+    align-items: center;
+}
+.logo-text{
+    margin: 0rem 1rem;
+    font-size: 1.5rem;
+    color: #e6e6e6;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.nav-button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    cursor: pointer;
+}
+
+.container-bar-right{
+    display: flex;
+    align-items: center;
+
+}
+.search-bar{
+    padding: 0.2vw;
+    border-radius: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: #e6e6e6;
+}
+.button-submit{
+    font-size: 1rem;
+    color: black;
+}

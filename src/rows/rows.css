@@ -1,0 +1,55 @@
+.container-row{
+    height: 20%;
+    width: 80%;
+    margin: 0 auto;
+}
+.container-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-two{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.div-posters{
+    height: 12vw;
+    width: 10vw;
+}
+.active-rows{
+    display: flex;
+}
+.current-row{
+    background-color: black;
+    height: 10px;
+    width: 20px;
+}
+.button-icon {
+    padding: 1vw;
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+  }
+  
+  .button-icon svg {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+  }
+  .button-icon:first-child svg {
+    left: 10px;
+  }
+  
+  .button-icon:last-child svg {
+    right: 10px;
+  }
+  .icon{
+    cursor: pointer;
+  }
+  .icon:hover{
+    font-size: 2.5vw;
+  }

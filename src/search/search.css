@@ -1,0 +1,16 @@
+.search-div{
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.search-div > div{
+    width: 15vw;
+}
+.search-div-card > .card{
+    height: 90%;
+    width: 90%;
+}

@@ -1,0 +1,43 @@
+.over-sreen-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.over-screen-window {
+    position: relative;
+    border-radius: 1rem;
+    padding: 5rem 0;
+    width: 0;
+    background-color: #212121;
+    animation: showWindow 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes showWindow {
+    0% {
+      width: 40%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  
+.close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: black;
+    font-size: 24px;
+  }

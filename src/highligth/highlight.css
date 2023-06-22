@@ -1,0 +1,29 @@
+main{
+    font-size: 0.8vw;
+    width: 100%;
+    margin-top: 5vw;
+}
+.trending-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trend-img{
+    max-height: 400px;
+    width: 12vw;
+    margin-right: 1rem;
+}
+.poster-description{
+    width: 40%;
+    display: flex;
+}
+.trend-description{
+    width: 50%;
+}
+.div-player{
+  max-width: 50%;
+}
+.youtube{
+  max-width: 100%;
+}

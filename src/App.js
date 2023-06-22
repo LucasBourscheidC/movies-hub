@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState} from "react";
+import Home from "./home/Home";
+import Search from "./search/Search";
+import Head from "./head/Head";
+import Showdetails from "./showdetails/Showdetails";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){ 
+    const [pageStates, setPageStates] = useState(<Home handleOverview={handleOverview}/>);
+    const [overView, setOverView] = useState(<></>);
+    function changeState(state){  
+        setPageStates(state);
+    }
+    function handleOverview(item){
+        if(item === undefined)
+        {
+            setOverView(<></>)
+        }
+        else{
+            setOverView(<Showdetails item={item} handleOverview={handleOverview}/>)
+        }
+
+    }
+    return( <>
+            <Head changeState={changeState} handleOverview={handleOverview}/>
+            {overView}
+            {pageStates}
+        </>
+    );
 }
 
-export default App;
